@@ -133,3 +133,7 @@ if (lietus === true && temp >= nuoKadaSilta) {
 } else if (lietus === false && temp < nuoKadaSilta) {
     console.log('2) pasiimk striuke');
 }
+
+const silta = temp >= nuoKadaSilta;
+const ats = '3)' + lietus ? silta ? 'varom nuogi' : 'pasiimk palta ir sketi' : silta ? ' gali eiti su maike' : 'pasiimk striuke';
+console.log(ats);

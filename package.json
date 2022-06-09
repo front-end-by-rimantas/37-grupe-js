@@ -1,20 +1,21 @@
 {
-  "name": "37-grupe",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "nodemon",
-    "number": "nodemon ./js/number.js",
-    "string": "nodemon ./js/string.js",
-    "function": "nodemon ./js/function.js",
-    "if": "nodemon ./js/if.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "Rimantas",
-  "license": "MIT",
-  "devDependencies": {
-    "nodemon": "^2.0.16"
-  }
+    "name": "37-grupe",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "nodemon",
+        "number": "nodemon ./js/number.js",
+        "string": "nodemon ./js/string.js",
+        "function": "nodemon ./js/function.js",
+        "if": "nodemon ./js/if.js",
+        "ternary": "nodemon ./js/ternary.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "Rimantas",
+    "license": "MIT",
+    "devDependencies": {
+        "nodemon": "^2.0.16"
+    }
 }
