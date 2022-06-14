@@ -5,6 +5,7 @@
     "main": "index.js",
     "scripts": {
         "dev": "nodemon",
+        "switch": "nodemon ./js/switch.js",
         "number": "nodemon ./js/number.js",
         "string": "nodemon ./js/string.js",
         "function": "nodemon ./js/function.js",
