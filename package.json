@@ -5,7 +5,11 @@
     "main": "index.js",
     "scripts": {
         "dev": "nodemon",
+        "letterCount": "nodemon ./js/letterCount.js",
+        "math-as-object": "nodemon ./js/math-as-object.js",
+        "math-as-array": "nodemon ./js/math-as-array.js",
         "string-array": "nodemon ./js/string-array.js",
+        "object": "nodemon ./js/object.js",
         "other-loops": "nodemon ./js/other-loops.js",
         "switch": "nodemon ./js/switch.js",
         "number": "nodemon ./js/number.js",
