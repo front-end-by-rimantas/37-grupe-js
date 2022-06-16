@@ -1,14 +1,9 @@
-console.clear();
-
-const n1 = '77';
-const n2 = 5;
-
 function suma(a, b) {
     const initialAsize = ('' + a).length;
     const initialBsize = ('' + b).length;
 
-    a = parseInt(a);
-    b = parseInt(b);
+    a = parseFloat(a);
+    b = parseFloat(b);
 
     const afterAsize = ('' + a).length;
     const afterBsize = ('' + b).length;
@@ -23,5 +18,4 @@ function suma(a, b) {
     return a + b;
 }
 
-const ats = suma(n1, n2);
-console.log(ats);
+module.exports = suma;

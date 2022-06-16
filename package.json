@@ -5,6 +5,7 @@
     "main": "index.js",
     "scripts": {
         "dev": "nodemon",
+        "numberImport": "nodemon ./numberImport.js",
         "number-parsing": "nodemon ./js/number-parsing.js",
         "letterCount": "nodemon ./js/letterCount.js",
         "math-as-object": "nodemon ./js/math-as-object.js",
