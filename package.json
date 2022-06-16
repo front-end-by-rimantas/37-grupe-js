@@ -6,6 +6,7 @@
     "scripts": {
         "dev": "nodemon",
         "numberImport": "nodemon ./numberImport.js",
+        "if-values": "nodemon ./js/if-values.js",
         "parsing": "nodemon ./js/parsing.js",
         "number-parsing": "nodemon ./js/number-parsing.js",
         "letterCount": "nodemon ./js/letterCount.js",
