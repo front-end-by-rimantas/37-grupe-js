@@ -1,17 +1,11 @@
 function suma(a, b) {
-    const initialAsize = ('' + a).length;
-    const initialBsize = ('' + b).length;
+    a = +a;
+    b = +b;
 
-    a = parseFloat(a);
-    b = parseFloat(b);
-
-    const afterAsize = ('' + a).length;
-    const afterBsize = ('' + b).length;
-
-    if (isNaN(a) || initialAsize !== afterAsize) {
+    if (isNaN(a)) {
         return 'ERROR: Pirmas parametras yra ne tikras skaicius';
     }
-    if (isNaN(b) || initialBsize !== afterBsize) {
+    if (isNaN(b)) {
         return 'ERROR: Antras parametras yra ne tikras skaicius';
     }
 
