@@ -76,3 +76,7 @@ for (const n of rinkinys) {
 console.log(r);
 
 console.log([...rinkinys]);
+console.log('----------------------');
+
+// 4b
+console.log([...(new Set(a))]);
