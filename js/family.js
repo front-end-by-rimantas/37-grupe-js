@@ -23,7 +23,22 @@ const family = [
             {
                 name: 'Ona',
                 age: 67,
-                children: [],
+                children: [
+                    {
+                        name: 'Juozas',
+                        age: 44,
+                        children: [
+                            {
+                                name: 'Styvas',
+                                age: 105,
+                            },
+                            {
+                                name: 'Maryte',
+                                age: 87,
+                                children: [],
+                            },
+                        ],
+                    },],
             },
         ],
     },
@@ -43,20 +58,26 @@ const family = [
     },
 ];
 
-function oldest(list) {
+
+
+function oldest(list, depth = 0) {
     let age = -1;
+    let name = '';
     for (const person of list) {
         if (person.age > age) {
             age = person.age;
+            name = person.name;
         }
         if (person.children && person.children.length > 0) {
-            const oldestChild = oldest(person.children);
-            if (oldestChild > age) {
-                age = oldestChild;
+            const oldestChild = oldest(person.children, depth + 1);    // {name, age}
+            if (oldestChild.age > age) {
+                age = oldestChild.age;
+                name = oldestChild.name;
             }
         }
     }
-    return age;
+    console.log(depth, { name, age });
+    return depth === 0 ? `${name} is ${age} years old.` : { name, age };
 }
 
 console.log(oldest(family)); // Styvas is 105 years old.
