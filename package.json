@@ -6,6 +6,7 @@
     "scripts": {
         "dev": "nodemon",
         "numberImport": "nodemon ./numberImport.js",
+        "multiArray": "nodemon ./js/multiArray.js",
         "destructuring": "nodemon ./js/destructuring.js",
         "pc-storage": "nodemon ./js/pc-storage.js",
         "family": "nodemon ./js/family.js",
