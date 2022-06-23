@@ -49,3 +49,39 @@ const [first, second, ...other] = marks;
 console.log(first);
 console.log(second);
 console.log(other);
+
+console.log('####################');
+
+function info(...params) {
+    return `info: ${params.length}`;
+}
+
+console.log(info());
+console.log(info(undefined));
+console.log(info(1));
+console.log(info(1, undefined));
+console.log(info(1, 2));
+console.log(info(1, 2, 'labas'));
+console.log(info(1, 2, 'labas', true));
+
+
+console.log('################');
+function biggest(...list) {         // rest
+    return Math.max(...list);       // spread
+}
+
+console.log(biggest(2, 4));
+console.log(biggest(22, 4));
+console.log(biggest(7));
+console.log(biggest(7, 8, -4, 9));
+
+
+function example(firstname, lastname, ...otherStuff) {
+    console.log(firstname);
+    console.log(lastname);
+    console.log(otherStuff);
+    return '------------';
+}
+
+console.log(example('Petras', 'Petraitis'));
+console.log(example('Petras', 'Petraitis', 1, 2, 2));
