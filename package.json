@@ -6,6 +6,7 @@
     "scripts": {
         "dev": "nodemon",
         "numberImport": "nodemon ./numberImport.js",
+        "destructuring": "nodemon ./js/destructuring.js",
         "pc-storage": "nodemon ./js/pc-storage.js",
         "family": "nodemon ./js/family.js",
         "maxInList": "nodemon ./js/maxInList.js",
